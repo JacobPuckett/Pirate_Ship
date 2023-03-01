@@ -1,0 +1,14 @@
+h1 {
+    text-align: center;
+    background-color: black;
+    font-weight: bolder;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+    gap: 50px;
+}
+
