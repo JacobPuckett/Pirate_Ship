@@ -21,10 +21,13 @@ app.use(express.static('public'))
 
 
 
+// const crew = ['Captain Jack Sparow', 'Joshamee Gibbs', 'Robert Greene']
 
 
-
-
+// app.get('/', (req, res) => {
+//     res.status(200).send(crew)
+//     rollbar.info('crew list is sent')
+// })
 
 app.get('/', (req,res) => {
     rollbar.log('site visited')
@@ -35,8 +38,9 @@ app.get('/css', (req,res) => {
     res.status(200).sendFile(path.join(__dirname, '../public/styles.css'))
 })
 app.get('/js', (req,res) => {
-    rollbar.error('black pearl does not zoom')
+    
     res.status(200).sendFile(path.join(__dirname, '../public/main.js'))
+    rollbar.error('black pearl does zoom')
 })
 
 
