@@ -27,6 +27,7 @@ app.use(express.static('public'))
 
 
 app.get('/', (req,res) => {
+    rollbar.log('site visited')
     res.status(200).sendFile(path.join(__dirname, '../public/index.html'))
 }) 
 
@@ -34,6 +35,7 @@ app.get('/css', (req,res) => {
     res.status(200).sendFile(path.join(__dirname, '../public/styles.css'))
 })
 app.get('/js', (req,res) => {
+    rollbar.error('black pearl does not zoom')
     res.status(200).sendFile(path.join(__dirname, '../public/main.js'))
 })
 
