@@ -8,8 +8,8 @@ ship.addEventListener('click', (evt) => {
 let deleteBtn = document.querySelector('button')
 
 
-deleteBtn.addEventListener('click', (evt) => {
-    const arr = ''
-    ship = arr
-    rollbar.warning('bad')
-})
+// deleteBtn.addEventListener('click', (evt) => {
+//     // const arr = ''
+//     // ship = arr
+//     rollbar.warning('bad')
+// })
