@@ -43,16 +43,16 @@ app.get('/js', (req,res) => {
     rollbar.error('black pearl does zoom')
 })
 
-function doIt() {
-    try {
-        return 1;
-    } finally {
-        rollbar.info("did it work")
-        return 2;
+// function doIt() {
+//     try {
+//         return 1;
+//     } finally {
+//         rollbar.info("did it work")
+//         return 2;
        
-    }
-}
+//     }
+// }
 
-doIt();
+// doIt();
 
 app.listen(4000, console.log(`server running on 4000`))
